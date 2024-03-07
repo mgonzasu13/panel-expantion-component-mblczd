@@ -1,0 +1,7 @@
+<app-accordion
+  *ngFor="let accordion of accordionsData"
+  [title]="accordion.title"
+  [content]="accordion.content"
+  (accordionOpened)="closeOtherAccordions($event)"
+>
+</app-accordion>
